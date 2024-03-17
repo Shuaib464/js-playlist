@@ -43,3 +43,42 @@ console.log(typeof outsideTemp);    // object
 console.log(typeof userEmail);      // undefined
 console.log(typeof myFunction);     // function
 console.log(typeof heros);          // object
+
+
+
+//      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+// There are two types of memory  --->  1)Stack      2)Heap
+
+//  whenever we use primitive data types then STACK MEMORY is used  -:  Stack(primitive)
+// and when we use reference dataTypes then HEAP MEMORY is used  -:  Heap(reference)
+
+
+let myName = "shuaib"
+
+let fullName = myName    // passes a copy of myName
+console.log(fullName);
+
+fullName = "shuaib ahamad"
+
+console.log(myName);
+console.log(fullName);
+
+
+
+//reference variable
+
+let userOne = {
+    name: "Shuaib",
+    tech: "react"
+}
+
+let userTwo = userOne   // here passes the reference(adderess)
+
+userTwo.tech = 'angular'   
+
+console.log(userOne.tech);
+console.log(userTwo.tech);
+// for both the value has changed
