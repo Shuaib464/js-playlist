@@ -50,7 +50,7 @@ console.log(typeof heros);          // object
 
 
 
-// There are two types of memory  --->  1)Stack      2)Heap
+// There are two types of memory  --->  1)Stack(copy)      2)Heap(reference)
 
 //  whenever we use primitive data types then STACK MEMORY is used  -:  Stack(primitive)
 // and when we use reference dataTypes then HEAP MEMORY is used  -:  Heap(reference)
