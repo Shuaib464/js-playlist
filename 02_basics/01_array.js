@@ -39,4 +39,17 @@ myArr.pop()                 // remove the last element
 // const newArr = myArr.join()      // converts array into the string and returns it
 // console.log(newArr);
 
-// const myNewArr1 = myArr.slice(1, 3)        // return a copy of a section of array
+//  difference b/w [   SLICE & SPLICE   ]
+console.log("A -: ", myArr);
+const myNewArr1 = myArr.slice(1, 3)        // return a copy of a section of array
+console.log(myNewArr1);
+console.log("B -: ", myArr);
+
+const myNewArr2 = myArr.splice(1, 3)        // delete the items from original arrayand return it as an array
+console.log(myNewArr2);
+console.log("C -:",myArr);
+
+/*
+NOTE -  slice - it dosen't manipulate in the original array
+        splice - it manipulates the original array
+*/
