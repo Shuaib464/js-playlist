@@ -6,11 +6,21 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        
+        //console.log(this);     // this for object
     }
 }
 
-user.welcomeMessage()
+//user.welcomeMessage()
 
-user.username = "Ahmad";
-user.welcomeMessage();
+// user.username = "Ahmad";
+// user.welcomeMessage();  
+// console.log(this);     // global this
+
+function chai() {
+    let username = "Shuaib";
+    // console.log(this);
+    console.log(this.username);      // we cannot use "this" in this type
+    
+}
+
+chai();
