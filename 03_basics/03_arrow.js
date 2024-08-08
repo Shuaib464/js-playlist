@@ -16,11 +16,25 @@ const user = {
 // user.welcomeMessage();  
 // console.log(this);     // global this
 
-function chai() {
+// function chai() {
+//     let username = "Shuaib";
+//     // console.log(this);
+//     console.log(this.username);      // we cannot use "this" in this type   
+// }
+
+// chai();
+
+// const chai = function() {
+//     let username = "Shuaib";
+//     // console.log(this);
+//     console.log(this.username);      // we cannot use "this" in this type   
+// }
+// chai();
+
+/* ARROW FUNCTION  */
+const chai = () => {
     let username = "Shuaib";
     // console.log(this);
-    console.log(this.username);      // we cannot use "this" in this type
-    
+    console.log(this.username);      // we cannot use "this" in this type   
 }
-
-chai();
+chai()
