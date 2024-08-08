@@ -37,4 +37,24 @@ const chai = () => {
     // console.log(this);
     console.log(this.username);      // we cannot use "this" in this type   
 }
-chai()
+// chai()
+
+/* Basic arrow function
+    Explicit return
+*/
+// const addTwo = (num1, num2) => {
+//     return num1 + num2;
+// }
+
+// console.log(addTwo(4, 3));
+
+/* Implicit return */
+//const addTwo = (num1, num2) => num1 + num2;    //FIRST WAY 
+const addTwo = (num1, num2) => (num1 + num2);    // second way
+
+console.log(addTwo(4, 8));
+
+/* NOTE ->  When we use {} then we have write "return" keyword
+            and when we use () then we don't have to use "return"
+*/
+
