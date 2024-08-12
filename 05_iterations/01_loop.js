@@ -29,3 +29,9 @@ for (let index = 0; index < 15; index++) {
     console.log(`value of i is ${index}`);
 
 }
+
+
+/* 
+    "break" - break the loop
+    "continue" - skip one iteration of loop
+*/
