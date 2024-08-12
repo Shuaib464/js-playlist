@@ -31,10 +31,18 @@ map.set('IN', "Hindustan");     // it will override the value of "IN" key
 // console.log(map);
 
 for (const [key, value] of map) {     // de-structure in key-value
-    console.log(key, ':-' , value);
+    // console.log(key, ':-' , value);
 }
 
 
+const myObj = {
+    movie1: "Tirangaa",
+    movie2: "Sholey",
+}
+
+// for (const [key, value] of myObj) {
+//     console.log(key, ': -', value);              // not working for object
+// }
 
 
 
