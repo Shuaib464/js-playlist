@@ -39,8 +39,13 @@ and return a new array after performing the action
 
 const nums= [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-const newNums = nums.map( (item) => item + 10)
+// const newNums = nums.map( (item) => item + 10)      // [  11, 12, 13, 14, 15,  16, 17, 18, 19]
+
+const newNums = nums
+                    .map( (num) => num + 10 )
+                    .map( (num) => num + 1)
+
 
 console.log(newNums);
-console.log(nums);      // it doesnot manipulate the original array
+// console.log(nums);      // it doesnot manipulate the original array
 
