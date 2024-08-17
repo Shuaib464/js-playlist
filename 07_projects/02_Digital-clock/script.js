@@ -3,7 +3,7 @@ let stopBtn = document.querySelector('#stop')
 let clock = document.querySelector('.clock')
 
 
- myInterval = setInterval(function(){
+var myInterval = setInterval(function(){
         let date = new Date();
         clock.innerHTML = date.toLocaleTimeString();
  }, 1000);
