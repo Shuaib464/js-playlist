@@ -10,7 +10,9 @@ const myPara = `Try clicking on one of the colors
 para.innerText = myPara;
 
 
-
+wrapper.addEventListener('click', (e) => {
+    wrapper.style.backgroundColor = "rgb(243, 233, 221)";
+})
 
 
 
@@ -18,5 +20,6 @@ para.innerText = myPara;
 buttons.forEach(button => {
     button.addEventListener('click', (e) => {
         wrapper.style.backgroundColor = e.target.id;
+        e.stopPropagation();
     })
 })
