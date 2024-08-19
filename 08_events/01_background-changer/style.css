@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+button{
+    width: 20%;
+    height: 2rem;
+    border-radius: 7px;
+    background-color: antiquewhite;
+    color: rgb(238, 73, 100);
+    font-size: large;
+}
+
+button:hover{
+    background-color: rgb(238, 73, 100);
+    color: antiquewhite;
+}
